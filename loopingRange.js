@@ -1,7 +1,15 @@
 function range(start, end, step) {
-  let steps = [start, end, step]
-  steps = (end - start) / step  
-  return steps
+  var array = []
+  if (start === undefined || end === undefined || step === undefined || (start > end || step <= 0)) {
+    return [];
+  } 
+      
+  for (let i = start; i <= end; i += step) {
+    array.push(i)
+    console.log(array)
+      
+  } return array
+    
 }
 
 console.log(range(0, 10, 2));
