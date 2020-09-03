@@ -17,7 +17,7 @@ const judgeVegetable = function (vegetables, metric) {
   } else if (topScore === vegetables[2].redness) {
     console.log(vegetables[2].submitter)
     return vegetables[2].submitter
-  } 
+  } //CODE WORKS!!!!!
 } 
 
 const vegetables = [
