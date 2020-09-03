@@ -1,13 +1,17 @@
 const sumLargestNumbers = function(data) {
-  const counts = [
-    [ 1, 10 ]
-    [ 1, 2, 3]
-    [10, 4, 34, 6, 92, 2]
-  ]
-  for (i = 0; i = counts[0].length; i+= ) {
-    console.log(counts[0])
+  let highest = 0;  // Variable to store the largest number 
+  let secondHighest = 0; //variable to store the secondLargest number 
+  for (i = 0; i < data.length; i++ ) {
+    if (data[i] > highest) {
+      highest = data[i];
+    }
   }
-
+  for (i = 0; i < data.length; i++ ) {
+    if (data[i] > secondHighest && data[i] < highest) {
+      secondHighest = data[i];
+    }
+  } return secondHighest + highest
+  console.log(secondHighest + highest)
 };
 
 console.log(sumLargestNumbers([1, 10]));
