@@ -1,8 +1,8 @@
 const instructorWithLongestName = function(instructors) {
   let longest = 0
   let name = ""
-  let longestNameInstructor = 
-  for ( let instructor of instructors) {
+  let longestNameInstructor = ""
+  for (let instructor of instructors) {
     name = instructor.name
     if (name.length > longest) {
       longest = name.length 
